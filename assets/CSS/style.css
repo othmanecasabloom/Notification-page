@@ -15,150 +15,156 @@
 - Very dark blue: hsl(224, 21%, 14%)
 
 */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Plus+Jakarta+Sans:wght@500;800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background: hsl(211, 68%, 94%);
-    max-width: 1440px;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  background: hsl(211, 68%, 94%);
+  max-width: 1440px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container {
-    font-size: 16px;
+  font-size: 16px;
 
-    background: white;
-    border-radius: 15px;
-    width: 600px;
-    box-shadow: 4px 2px 0px -1px rgba(227,227,227,0.64)
+  background: white;
+  border-radius: 15px;
+  width: 600px;
+  box-shadow: 4px 2px 0px -1px rgba(227, 227, 227, 0.64);
 }
 .head-content {
-    width: 100%;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
 }
 .notification-title {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .notification-title h1 {
-    
-    font-size: 16px;
-    color: hsl(224, 21%, 14%);
+  font-size: 16px;
+  color: hsl(224, 21%, 14%);
 }
 .notification-title .not-number {
-    font-size: 14px;
-    color: white;
-    background-color: hsl(219, 85%, 26%);
-    padding: 3px 9px;
-    border-radius: 7px;
+  font-size: 14px;
+  color: white;
+  background-color: hsl(219, 85%, 26%);
+  padding: 3px 9px;
+  border-radius: 7px;
 }
-.notification-title .not-number:is(:hover, :focus){
-    background-color: hsl(219, 12%, 42%);
-    cursor: pointer;
+.notification-title .not-number:is(:hover, :focus) {
+  background-color: hsl(219, 12%, 42%);
+  cursor: pointer;
 }
-.head-content .mark-all{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 14px;
-    color: hsl(219, 12%, 70%);
+.head-content .mark-all {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  color: hsl(219, 12%, 70%);
 }
-.head-content .mark-all:is(:hover, :focus){
-    color: hsl(219, 12%, 42%);
-    cursor: pointer;
+.head-content .mark-all:is(:hover, :focus) {
+  color: hsl(219, 12%, 42%);
+  cursor: pointer;
 }
 .new-not.unread {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 12px;
-    margin: 15px;
-    padding: 10px;
-    background-color: hsl(211, 68%, 94%);
-    border-radius: 10px;
-    box-shadow: 4px 2px 0px -1px rgba(227,227,227,0.64)
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  margin: 15px;
+  padding: 10px;
+  background-color: hsl(211, 68%, 94%);
+  border-radius: 10px;
+  box-shadow: 4px 2px 0px -1px rgba(227, 227, 227, 0.64);
 }
 .new-not {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 12px;
-    margin: 15px;
-    padding: 10px;
-    background: white;
-    box-shadow: 0 0 0 0 ;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  margin: 15px;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 0 0 0;
 }
 .read-not {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 12px;
-    margin: 15px;
-    padding: 10px;
-    display: block;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  margin: 15px;
+  padding: 10px;
+  display: block;
 }
-.new-not .profile, .read-not .profile {
-    color: hsl(219, 12%, 42%);
-    gap: 10px;
+.new-not .profile,
+.read-not .profile {
+  color: hsl(219, 12%, 42%);
+  gap: 10px;
 }
-.new-not img, .read-not img  {
-    float: left;
-    width: 32px;
-    height: 32px;
-    margin-right: 13px;
-    margin-bottom: 20px;
+.new-not img,
+.read-not img {
+  float: left;
+  width: 32px;
+  height: 32px;
+  margin-right: 13px;
+  margin-bottom: 20px;
 }
-.new-not , .read-not  {
-    cursor: pointer;
+.new-not,
+.read-not {
+  cursor: pointer;
 }
-.new-not .profile .profile-name, .read-not .profile .profile-name  {
-    color: black;
-    font-weight: bold;
+.new-not .profile .profile-name,
+.read-not .profile .profile-name {
+  color: black;
+  font-weight: bold;
 }
 .new-not .profile .dot {
-    background-color: hsl(1, 90%, 64%) ;
-    width: 10px;
-    height: 10px;
-    margin-left: 10px;
-    border-radius: 50%;
-    display: inline-block;
+  background-color: hsl(1, 90%, 64%);
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+  display: inline-block;
 }
 .profile-time {
-    color: hsl(219, 14%, 63%);
+  color: hsl(219, 14%, 63%);
 }
 .profile fieldset {
-    padding: 10px;
-    font-size: 14px;
-    line-height: 1.4;
-    margin-top: 15px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 15px;
 }
 .profile-info {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .first {
-    color: hsl(224, 21%, 14%);
+  color: hsl(224, 21%, 14%);
 }
 .club {
-    color: hsl(219, 85%, 26%);
-    font-weight: 550;
+  color: hsl(219, 85%, 26%);
+  font-weight: 550;
 }
-@media screen and (max-width:800px){
-    .container {
-        width: 600px;
-    }
+@media screen and (max-width: 800px) {
+  .container {
+    width: 600px;
+  }
 }
-@media screen and (max-width:600px){
-    .container {
-        width: 400px;
-    }
+@media screen and (max-width: 600px) {
+  .container {
+    width: 400px;
+  }
 }
 
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
